@@ -60,7 +60,7 @@ class Looper():
 
     def toggle_recording(self):
         self.recording = not self.recording
-        print(f'Recording: {self.recording}')
+        #print(f'Recording: {self.recording}')
 
         # if toggle caused us to start recording
         if self.recording:
@@ -84,7 +84,7 @@ class Looper():
         self._channel += 1
         if self._channel > self.max_channel:
             self._channel = 1
-        print(f'Now on channel {self._channel}')
+        #print(f'Now on channel {self._channel}')
 
     def process_message(self, msg):
         msg.setChannel(self._channel)
